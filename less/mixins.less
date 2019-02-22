@@ -1,12 +1,30 @@
 // Mixins Here
 
-.sign-up-btn(){
-    background: #22283A;
+.header-img() {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.nav-list-style(){
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.sign-up-btn(@btn-bg-color, @text-color){
+    background: @btn-bg-color;
     text-align: center;
-    color: #F6F6F6;
+    color: @text-color;
     font-size: 1.5rem;
     border-radius: 0.5rem;
     padding: 1rem;
     width: 33%;
     cursor: pointer;
+
+    &:hover{
+        background-color: @text-color;
+        color: @btn-bg-color;
+    }
 }
+

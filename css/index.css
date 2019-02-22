@@ -292,6 +292,10 @@ footer {
   width: 33%;
   cursor: pointer;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: #22283A;
+}
 @media (max-width: 515px) {
   .home .walk .walk-text .btn {
     width: 100%;

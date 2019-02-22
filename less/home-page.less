@@ -5,8 +5,7 @@
   .intro {
 
     img {
-      border-radius: 10px;
-      width: 100%;
+      .header-img();
     }
 
     h2 {
@@ -90,7 +89,7 @@
       }
 
       .btn {
-        .sign-up-btn();
+        .sign-up-btn(@btn-bg-color, @wild-sand);
 
         @media @mobile{
           width: 100%;
