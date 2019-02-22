@@ -4,6 +4,10 @@
 
   .intro {
 
+    img {
+      border-radius: 10px;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -19,11 +23,26 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @mobile{
+      justify-content: center;
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile{
+        width: 90%;
+      }
+    }
+
+    .hidden-mobile-img{
+      
+      @media @mobile{
+        display: none;
+      }
     }
   }
 
@@ -58,6 +77,7 @@
       }
 
       .btn {
+        .sign-up-btn();
       }
     }
 
