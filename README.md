@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive layouts use fixed units such as px for sizing their elements, but make use of media queries to set specific breakpoints in order to to accomodoate their websites for different devices such as desktop, tablet, and mobile. Responsive layouts use responsive units such as em, rem, or % as well as media query breakpoints so that as viewports grow or get smaller, the site continues to look good and function well across almost any device. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop first means that you will design and code for larger, desktop devices first and then shrink the layout or features as the viewport gets smaller. Mobile first means that you will design and code for smaller devices such as phones or tablets first and then grow the layout responsively as your viewport gets larger. In regards to media queries, the desktop first designs will utilize max-width breakpoints whereas mobile layouts will utilize min-width breakpoints. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Default font size for browsers is typically 16px, so `font-size: 62.5%` converts the default font-size for your layout to 10px. As `rem` units are responsive relative to the font-size of the root, this makes it so that any element utilizing `rem` units can be measured easily as `1rem` will be equal to `10px`.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I would describe it as another way to write CSS that allows us to keep our code more organized and keep the scope of our element styles more specific. It also allows us to use variables and parameters, simlar to those found in languages like javascript or Python, that allows us to re-use recurring styles in our layouts easily. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept would have to be nesting because even if that were the only feature that pre-processing offered, it would still make organizing and keeping track of parent and child stylings exponentially easier than it is in base CSS. I think the concept I struggle with the most is probably mixins/parametric mixins. I understand how they work and why you would want to use them, but it usually takes me until after I've already written a certain style multiple times before I think to make use of them. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
