@@ -6,6 +6,7 @@
 
     img {
       border-radius: 10px;
+      width: 100%;
     }
 
     h2 {
@@ -59,31 +60,53 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 6rem;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 5rem 6rem;
     display: flex;
     justify-content: center;
+
+    @media @mobile{
+      width: 100%;
+      padding: 2rem 0;;
+      margin: 0 auto;
+      flex-direction: column;
+    }
 
     .walk-text {
       width: 50%;
 
+      @media @mobile{
+        width: 90%;
+        margin: 2rem auto 0;
+      }
+
       h3 {
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
       }
 
       p {
-        margin-bottom: 26px;
+        margin-bottom: 2.6rem;
       }
 
       .btn {
         .sign-up-btn();
+
+        @media @mobile{
+          width: 100%;
+          padding: 2.5rem;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile{
+        order: -1;
+        width: 90%;
+      }
       
       img {
         width: 100%;
